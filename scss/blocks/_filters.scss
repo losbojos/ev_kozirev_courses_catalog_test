@@ -21,6 +21,8 @@
     white-space: nowrap;
     transition: color 0.15s ease, border-color 0.15s ease;
 
+    border: 1px solid transparent;
+
     &:not(&_active):hover {
       color: $color-text;
     }
@@ -32,8 +34,8 @@
     }
   }
 
-  &__label {
-  }
+  // &__label {
+  // }
 
   &__count {
     font-weight: 900;

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Our online courses</title>
 
   <!-- Загрузка шрифтов -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,22 +49,6 @@
 
     <div class="catalog">
       <div class="catalog__grid">
-        <template id="card-template">
-          <article class="card">
-            <div class="card__image-wrap">
-              <img class="card__image" src="" alt="" loading="lazy">
-            </div>
-            <div class="card__body">
-              <span class="card__category"></span>
-              <h2 class="card__title"></h2>
-              <div class="card__info">
-                <span class="card__price"></span>
-                <span class="card__divider">|</span>
-                <span class="card__speaker"></span>
-              </div>
-            </div>
-          </article>
-        </template>
       </div>
 
       <div class="catalog__empty">
@@ -91,6 +75,22 @@
 
   </div>
 
+  <template id="card-template">
+    <article class="card">
+      <div class="card__image-wrap">
+        <img class="card__image" src="" alt="" loading="lazy">
+      </div>
+      <div class="card__body">
+        <span class="card__category"></span>
+        <h2 class="card__title"></h2>
+        <div class="card__info">
+          <span class="card__price"></span>
+          <span class="card__divider">|</span>
+          <span class="card__speaker"></span>
+        </div>
+      </div>
+    </article>
+  </template>
 
   <script src="code/Course.js"></script>
   <script src="code/main.js"></script>

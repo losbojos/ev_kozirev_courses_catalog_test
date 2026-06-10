@@ -1,7 +1,7 @@
 .search {
   position: relative;
-  flex: 0 1 clamp(12rem, 28vw, 19.69rem);
-  min-width: min(100%, 12rem);
+  flex: 0 1 #{fluid(6rem, 19.69rem)};
+  min-width: min(100%, 6rem);
   background-color: $color-bg;
 
   &__input {
