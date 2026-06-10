@@ -1,0 +1,59 @@
+@use "sass:math";
+
+// 1rem = 16px по дефолту
+$layout-min: 20rem; // 320px минимальная ширина экрана
+$layout-max: 120rem; // 1920px максимальная ширина экрана
+
+// получить исходное число без единиц измерения
+@function strip-unit($value) {
+  @return math.div($value, $value * 0 + 1);
+}
+
+// Задать адаптивнй размер в rem от минимального до максимального значения
+// Можно задавать в других единицах, но все 4 параметра, включая дефолтные, должны быть в одних и тех же единицах
+// @param {number} $min - минимальный размер
+// @param {number} $max - максимальный размер
+// @param {number} $min-vw - минимальная ширина экрана
+// @param {number} $max-vw - максимальная ширина экрана
+// @return {number} - адаптивный размер в rem
+@function fluid($min, $max, $min-vw: $layout-min, $max-vw: $layout-max) {
+  @return clamp(
+    #{$min},
+    calc(#{$min} + (#{strip-unit($max)} - #{strip-unit($min)}) * ((100vw - #{$min-vw}) / (#{strip-unit($max-vw)} - #{strip-unit($min-vw)}))),
+    #{$max}
+  );
+}
+
+$font-family: "Lato", sans-serif;
+
+$color-white: #fff;
+$color-primary: #ff3f3a;
+$color-secondary: #ffcf2d;
+$color-success: #03cea4;
+$color-danger: #ff4242;
+$color-warning: #f89828;
+$color-info: #5a87fc;
+$color-gray-900: #1e212c;
+$color-gray-800: #424551;
+$color-gray-700: #787a80;
+$color-gray-600: #9a9ca5;
+$color-gray-500: #b3b7bc;
+$color-gray-400: #d7dadd;
+$color-gray-300: #e5e8ed;
+$color-gray-200: #f4f5f6;
+$color-gray-100: #f9f9f9;
+
+$color-bg: $color-white;
+$color-text: $color-gray-900;
+$color-accent: $color-primary;
+$color-card-shadow: rgba(154, 156, 165, 0.3);
+
+$color-marketing: $color-success;
+$color-management: $color-info;
+$color-hr: $color-warning;
+$color-design: #f52f6e;
+$color-development: #7772f1;
+
+// карточка: 390px @ 1920, min 256px
+$card-width-min: 16rem;
+$card-width-max: 24.375rem;

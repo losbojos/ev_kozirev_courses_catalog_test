@@ -1,0 +1,9 @@
+.next {
+  display: none;
+  justify-content: center;
+
+  &_visible {
+    display: flex;
+  }
+
+}

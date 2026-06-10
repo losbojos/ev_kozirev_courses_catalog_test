@@ -1,0 +1,85 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "The Ultimate Google Ads Training Course",
+      "category": "marketing",
+      "categoryLabel": "Marketing",
+      "price": 100,
+      "speaker": "Jerome Bell",
+      "image": "course-01.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Product Management Fundamentals",
+      "category": "management",
+      "categoryLabel": "Management",
+      "price": 480,
+      "speaker": "Marvin McKinney",
+      "image": "course-02.jpg"
+    },
+    {
+      "id": 3,
+      "title": "HR Management and Analytics",
+      "category": "hr",
+      "categoryLabel": "HR & Recruiting",
+      "price": 200,
+      "speaker": "Leslie Alexander Li",
+      "image": "course-03.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Brand Management & PR Communications",
+      "category": "marketing",
+      "categoryLabel": "Marketing",
+      "price": 530,
+      "speaker": "Kristin Watson",
+      "image": "course-04.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Graphic Design Basic",
+      "category": "design",
+      "categoryLabel": "Design",
+      "price": 500,
+      "speaker": "Guy Hawkins",
+      "image": "course-05.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Business Development Management",
+      "category": "management",
+      "categoryLabel": "Management",
+      "price": 400,
+      "speaker": "Dianne Russell",
+      "image": "course-06.jpg"
+    },
+    {
+      "id": 7,
+      "title": "High-Load Software Architecture",
+      "category": "development",
+      "categoryLabel": "Development",
+      "price": 600,
+      "speaker": "Brooklyn Simmons",
+      "image": "course-07.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Human Resources - Selection and Recruitment",
+      "category": "hr",
+      "categoryLabel": "HR & Recruiting",
+      "price": 150,
+      "speaker": "Kathryn Murphy",
+      "image": "course-08.jpg"
+    },
+    {
+      "id": 9,
+      "title": "User Experience. Human-centered Design",
+      "category": "design",
+      "categoryLabel": "Design",
+      "price": 240,
+      "speaker": "Cody Fisher",
+      "image": "course-09.jpg"
+    }
+  ]
+}

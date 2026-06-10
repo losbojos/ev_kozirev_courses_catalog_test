@@ -1,0 +1,39 @@
+.search {
+  position: relative;
+  flex: 0 1 clamp(12rem, 28vw, 19.69rem);
+  min-width: min(100%, 12rem);
+  background-color: $color-bg;
+
+  &__input {
+    width: 100%;
+    padding: fluid(0.5rem, 0.69rem) fluid(2.25rem, 2.75rem) fluid(0.5rem, 0.69rem) fluid(0.5rem, 1rem);
+    border: 1px solid $color-gray-400;
+    border-radius: 0.25rem;
+
+    font-size: fluid(0.6rem, 0.875rem);
+    font-weight: 400;
+    line-height: 1.5;
+    color: $color-text;
+
+    transition: border-color 0.15s ease;
+
+    &::placeholder {
+      color: $color-gray-600;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: $color-gray-700;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    right: fluid(0.5rem, 0.875rem);
+    width: 1rem;
+    height: 1rem;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+}

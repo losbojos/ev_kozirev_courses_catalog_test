@@ -1,0 +1,19 @@
+.header{
+  text-align: center;
+  color: $color-gray-900;
+
+  &__motto{
+    font-weight: 700;
+    font-size: fluid(0.875rem, 1rem);
+    line-height: 150%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  &__title{
+    font-weight: 900;
+    font-size: fluid(1.5rem, 2.875rem);
+    line-height: 130%;
+    margin-top: 8px;
+  }
+}

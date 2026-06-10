@@ -1,0 +1,35 @@
+.decor {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+
+  &__shape {
+    position: absolute;
+    display: block;
+    height: auto;
+  }
+
+  // shapes.svg — 83×44, left 56, top 687
+  &__shape_left {
+    left: fluid(0.583rem, 3.5rem);
+    top: fluid(7.15rem, 43rem);
+    width: fluid(0.865rem, 5.1875rem);
+  }
+
+  // dots.svg — 143×105, top 86, right -36, rotate -60°
+  &__shape_top-right {
+    top: fluid(0.9rem, 5.375rem);
+    right: fluid(-0.375rem, -2.25rem);
+    width: fluid(1.49rem, 8.9375rem);
+    transform: rotate(-60deg);
+    transform-origin: center;
+  }
+
+  // shapes_diag.svg — 85×85, right 72, top 1104 
+  &__shape_bottom-right {
+    top: fluid(12rem, 72.125rem);
+    right: fluid(0.75rem, 4.5rem);
+    width: fluid(0.885rem, 5.3125rem);
+  }
+}

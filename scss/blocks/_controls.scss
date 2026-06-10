@@ -1,0 +1,7 @@
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: fluid(0.75rem, 1rem);
+}

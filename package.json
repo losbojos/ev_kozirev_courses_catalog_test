@@ -1,0 +1,16 @@
+{
+  "name": "bj_ip_kozirev",
+  "version": "1.0.0",
+  "description": "Test task",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass scss/main.scss css/main.css --style=compressed --no-source-map",
+    "dev": "sass scss/main.scss css/main.css --watch",
+    "serve": "npx serve ."
+  },
+  "keywords": [],
+  "author": "✈️https://t.me/ekitdev",
+  "devDependencies": {
+    "sass": "^1.100.0"
+  }
+}

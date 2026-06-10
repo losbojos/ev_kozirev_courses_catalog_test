@@ -1,0 +1,20 @@
+.page{
+  font-family: $font-family;
+  background-color: $color-bg;  
+  position: relative;
+  min-height: 100vh;
+  overflow-x: clip;
+
+  &__container{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 77.5rem; // 1230 px из макета + 5px*2 padding
+    margin: auto;
+    padding: fluid(1rem, 2.75rem) 5px;
+
+    display: flex;
+    flex-direction: column;    
+    gap: fluid(1.5rem, 3.75rem);
+  }
+}
