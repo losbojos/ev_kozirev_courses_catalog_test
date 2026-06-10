@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(min(100%, #{fluid($card-width-min, $card-width-max)}), #{fluid($card-width-min, $card-width-max)}));
     gap: fluid(1rem, 1.875rem);
-    margin-bottom: fluid(2rem, 3.75rem);
+    margin-bottom: fluid(1rem, 1.25rem);
 
     justify-content: center;    
   }

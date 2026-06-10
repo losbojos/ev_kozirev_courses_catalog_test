@@ -21,7 +21,7 @@
     white-space: nowrap;
     transition: color 0.15s ease, border-color 0.15s ease;
 
-    &:hover {
+    &:not(&_active):hover {
       color: $color-text;
     }
 
@@ -40,6 +40,5 @@
     font-size: 0.625rem;
     line-height: 150%;
     text-align: center;
-    color: $color-gray-600;
   }
 }

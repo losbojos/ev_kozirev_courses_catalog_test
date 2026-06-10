@@ -17,10 +17,14 @@ $layout-max: 120rem; // 1920px максимальная ширина экран�
 // @param {number} $max-vw - максимальная ширина экрана
 // @return {number} - адаптивный размер в rem
 @function fluid($min, $max, $min-vw: $layout-min, $max-vw: $layout-max) {
+  // Для значений отрицательных нужно скорректировать порядок
+  $clamp-min: if($min < $max, $min, $max);
+  $clamp-max: if($min < $max, $max, $min);
+
   @return clamp(
-    #{$min},
+    #{$clamp-min},
     calc(#{$min} + (#{strip-unit($max)} - #{strip-unit($min)}) * ((100vw - #{$min-vw}) / (#{strip-unit($max-vw)} - #{strip-unit($min-vw)}))),
-    #{$max}
+    #{$clamp-max}
   );
 }
 

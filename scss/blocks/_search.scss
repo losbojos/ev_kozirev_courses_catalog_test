@@ -6,7 +6,7 @@
 
   &__input {
     width: 100%;
-    padding: fluid(0.5rem, 0.69rem) fluid(2.25rem, 2.75rem) fluid(0.5rem, 0.69rem) fluid(0.5rem, 1rem);
+    padding: fluid(0.5rem, 0.72rem) fluid(0.5rem, 1rem);
     border: 1px solid $color-gray-400;
     border-radius: 0.25rem;
 
@@ -30,10 +30,12 @@
   &__icon {
     position: absolute;
     top: 50%;
-    right: fluid(0.5rem, 0.875rem);
-    width: 1rem;
-    height: 1rem;
     transform: translateY(-50%);
+    right: fluid(0.5rem, 1rem);
+
+    width: fluid(0.75rem, 1rem);
+    height: auto;    
+
     pointer-events: none;
   }
 }
