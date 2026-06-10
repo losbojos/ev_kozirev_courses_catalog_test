@@ -57,8 +57,8 @@ npm run dev
 
 ## Ссылки
 
-- Демо: добавить после деплоя на Vercel
-- Репозиторий: https://github.com/losbojos/kozirev_cources_catalog_test
+- Демо: https://ev-kozirev-courses-catalog-test.vercel.app/
+- Репозиторий: https://github.com/losbojos/ev_kozirev_courses_catalog_test
 
 ## Что хотелось бы доработать
 
