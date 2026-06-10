@@ -4,6 +4,7 @@
   "description": "Test task",
   "scripts": {
     "build": "sass scss/main.scss css/main.css --style=compressed --no-source-map",
+    "vercel-build": "npm run build",
     "dev": "sass scss/main.scss css/main.css --watch",
     "serve": "npx serve ."
   },
